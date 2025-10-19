@@ -1,0 +1,147 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Anka So",
+  "@appTitle": {
+    "description": "Le titre de l'application"
+  },
+  "welcome": "Bienvenue",
+  "@welcome": {
+    "description": "Message de bienvenue"
+  },
+  "login": "Connexion",
+  "@login": {
+    "description": "Bouton de connexion"
+  },
+  "signup": "Inscription",
+  "@signup": {
+    "description": "Bouton d'inscription"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Champ email"
+  },
+  "password": "Mot de passe",
+  "@password": {
+    "description": "Champ mot de passe"
+  },
+  "forgotPassword": "Mot de passe oublié ?",
+  "@forgotPassword": {
+    "description": "Lien mot de passe oublié"
+  },
+  "noAccount": "Pas de compte ? ",
+  "@noAccount": {
+    "description": "Texte pour les utilisateurs sans compte"
+  },
+  "alreadyHaveAccount": "Déjà un compte ? ",
+  "@alreadyHaveAccount": {
+    "description": "Texte pour les utilisateurs avec compte"
+  },
+  "home": "Accueil",
+  "@home": {
+    "description": "Onglet accueil"
+  },
+  "profile": "Profil",
+  "@profile": {
+    "description": "Onglet profil"
+  },
+  "settings": "Paramètres",
+  "@settings": {
+    "description": "Onglet paramètres"
+  },
+  "darkMode": "Mode sombre",
+  "@darkMode": {
+    "description": "Option mode sombre"
+  },
+  "language": "Langue",
+  "@language": {
+    "description": "Option langue"
+  },
+  "logout": "Se déconnecter",
+  "@logout": {
+    "description": "Bouton de déconnexion"
+  },
+  "skip": "Passer",
+  "@skip": {
+    "description": "Bouton passer"
+  },
+  "next": "Suivant",
+  "@next": {
+    "description": "Bouton suivant"
+  },
+  "previous": "Précédent",
+  "@previous": {
+    "description": "Bouton précédent"
+  },
+  "getStarted": "Commencer",
+  "@getStarted": {
+    "description": "Bouton commencer"
+  },
+  "loading": "Chargement...",
+  "@loading": {
+    "description": "Texte de chargement"
+  },
+  "error": "Erreur",
+  "@error": {
+    "description": "Message d'erreur"
+  },
+  "success": "Succès",
+  "@success": {
+    "description": "Message de succès"
+  },
+  "retry": "Réessayer",
+  "@retry": {
+    "description": "Bouton réessayer"
+  },
+  "termsOfUse": "Conditions Générales d'Utilisation",
+  "@termsOfUse": {
+    "description": "Titre du modal des conditions"
+  },
+  "termsDescription": "Pour procéder à la création de votre compte, vous devez accepter les conditions d'utilisation.",
+  "@termsDescription": {
+    "description": "Description du modal des conditions"
+  },
+  "acceptTerms": "J'accepte les conditions générales d'utilisation d'Anka So.",
+  "@acceptTerms": {
+    "description": "Texte de la checkbox des conditions"
+  },
+  "validate": "Valider",
+  "@validate": {
+    "description": "Bouton de validation"
+  },
+  "findYourIdealHome": "Trouvez votre logement \nid\u00e9al en un clin d'\u0153il",
+  "@findYourIdealHome": {
+    "description": "Titre de la premi\u00e8re page d'onboarding"
+  },
+  "findYourIdealHomeDescription": "D\u00e9couvrez des milliers de propri\u00e9t\u00e9s et trouvez votre nouveau chez-vous en quelques clics.",
+  "@findYourIdealHomeDescription": {
+    "description": "Description de la premi\u00e8re page d'onboarding"
+  },
+  "searchByYourCriteria": "Recherchez selon vos \ncrit\u00e8res en toute \nsimplicit\u00e9",
+  "@searchByYourCriteria": {
+    "description": "Titre de la deuxi\u00e8me page d'onboarding"
+  },
+  "searchByYourCriteriaDescription": "Filtrez par prix, localisation, type de bien et trouvez exactement ce que vous cherchez.",
+  "@searchByYourCriteriaDescription": {
+    "description": "Description de la deuxi\u00e8me page d'onboarding"
+  },
+  "bookYourNewHome": "R\u00e9servez votre\nnouveau chez-vous\nd\u00e8s aujourd'hui",
+  "@bookYourNewHome": {
+    "description": "Titre de la troisi\u00e8me page d'onboarding"
+  },
+  "bookYourNewHomeDescription": "Rejoignez des milliers de personnes qui ont trouv\u00e9 leur bonheur immobilier avec nous.",
+  "@bookYourNewHomeDescription": {
+    "description": "Description de la troisi\u00e8me page d'onboarding"
+  },
+  "termsDescriptionText": "Pour proc\u00e9der \u00e0 la cr\u00e9ation de votre compte, vous devez accepter ",
+  "@termsDescriptionText": {
+    "description": "D\u00e9but du texte de description des conditions"
+  },
+  "termsLinkText": "les conditions d'utilisation",
+  "@termsLinkText": {
+    "description": "Texte du lien vers les conditions"
+  },
+  "termsDescriptionEnd": ".",
+  "@termsDescriptionEnd": {
+    "description": "Fin du texte de description des conditions"
+  }
+}

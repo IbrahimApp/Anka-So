@@ -1,0 +1,301 @@
+# Rollano Configuration File
+# Configuration pour le générateur de code Flutter professionnel
+
+project:
+  name: "keneya"
+  package: "com.keneya"
+  description: "Keneya - Application medicale"
+
+architecture:
+  type: "hybrid"
+  folders:
+    - models
+    - services
+    - controllers
+    - screens
+    - widgets
+
+  # Structure des modules
+  module_structure:
+    models:
+      - "entity.dart" # Entités métier
+      - "dto.dart" # Data Transfer Objects
+      - "request.dart" # Requêtes API
+      - "response.dart" # Réponses API
+    services:
+      - "api_service.dart" # Service API
+      - "local_service.dart" # Service local
+      - "business_service.dart" # Logique métier
+    controllers:
+      - "controller.dart" # Contrôleur principal
+    screens:
+      - "screen.dart" # Écran principal
+      - "widgets/" # Widgets spécifiques
+    widgets:
+      - "custom_widgets.dart" # Widgets réutilisables
+
+components:
+  animated_checkbox:
+    duration: 300
+    colors:
+      primary: "0xFF2196F3"
+      selected: "0xFF4CAF50"
+      unselected: "0xFFE0E0E0"
+    size: 24.0
+    animation_curve: "Curves.easeInOut"
+
+  unified_card:
+    elevation: 2
+    border_radius: 12
+    padding: 16
+    margin: 8
+    colors:
+      background: "Colors.white"
+      border: "Colors.grey.shade300"
+
+  custom_toggle:
+    width: 50
+    height: 30
+    colors:
+      active: "0xFF4CAF50"
+      inactive: "0xFFE0E0E0"
+      thumb: "Colors.white"
+    animation_duration: 200
+
+  custom_toast:
+    duration: 3000
+    animation_duration: 300
+    colors:
+      success: "0xFF4CAF50"
+      error: "0xFFF44336"
+      warning: "0xFFFF9800"
+      info: "0xFF2196F3"
+    position: "top"
+
+  loading_button:
+    colors:
+      primary: "0xFF2196F3"
+      loading: "0xFF1976D2"
+    animation_duration: 200
+
+  empty_state:
+    icon_size: 64
+    colors:
+      icon: "0xFF9E9E9E"
+      text: "0xFF757575"
+
+  error_widget:
+    colors:
+      background: "0xFFFFEBEE"
+      border: "0xFFE57373"
+      text: "0xFFD32F2F"
+
+code_style:
+  use_trailing_commas: true
+  line_length: 80
+  use_relative_imports: true
+  sort_imports: true
+
+  # Conventions de nommage
+  naming:
+    files: "snake_case"
+    classes: "PascalCase"
+    variables: "camelCase"
+    constants: "UPPER_SNAKE_CASE"
+
+  # Formatage automatique
+  formatting:
+    auto_format: true
+    use_dart_format: true
+    remove_unused_imports: true
+
+testing:
+  # Configuration des tests
+  generate_tests: true
+  test_framework: "flutter_test"
+  mock_framework: "mockito"
+
+  # Types de tests à générer
+  test_types:
+    - unit # Tests unitaires
+    - widget # Tests de widgets
+    - integration # Tests d'intégration (optionnel)
+
+  # Structure des tests
+  test_structure:
+    unit: "test/unit/{module}/"
+    widget: "test/widget/{module}/"
+    integration: "test/integration/"
+
+documentation:
+  generate_docs: true
+  doc_format: "markdown"
+
+  # Types de documentation
+  doc_types:
+    - readme # README par module
+    - api # Documentation API
+    - examples # Exemples d'utilisation
+
+  # Structure de la documentation
+  doc_structure:
+    readme: "docs/{module}/README.md"
+    api: "docs/{module}/api.md"
+    examples: "docs/{module}/examples.md"
+
+i18n:
+  generate_i18n: true
+  supported_locales:
+    - "en" # Anglais
+    - "fr" # Français
+    - "es" # Espagnol (optionnel)
+
+  # Structure des fichiers de traduction
+  i18n_structure:
+    arb_files: "lib/l10n/"
+    generated_files: "lib/generated/l10n/"
+
+  # Clés de traduction par défaut
+  default_keys:
+    common:
+      - "loading"
+      - "error"
+      - "success"
+      - "cancel"
+      - "confirm"
+      - "save"
+      - "delete"
+      - "edit"
+      - "add"
+      - "search"
+
+logging:
+  level: "INFO"
+  file_logging: true
+  log_file: "rollano.log"
+  max_log_size: "10MB"
+  backup_count: 5
+
+  # Format des logs
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # Niveaux de verbosité
+  verbosity:
+    debug: false
+    verbose: true
+    quiet: false
+
+security:
+  # Validation des noms
+  name_validation:
+    strict: true
+    allowed_chars: "a-zA-Z0-9_-"
+    min_length: 2
+    max_length: 50
+
+  # Sécurité des fichiers
+  file_security:
+    backup_before_modify: true
+    backup_location: ".rollano_backup/"
+    rollback_on_error: true
+
+  # Permissions
+  permissions:
+    create_directories: true
+    create_files: true
+    modify_existing: false
+    delete_files: false
+
+ui:
+  # Interface utilisateur
+  theme: "modern"
+  colors:
+    primary: "blue"
+    success: "green"
+    warning: "yellow"
+    error: "red"
+    info: "cyan"
+
+  # Fonctionnalités UI
+  features:
+    progress_bar: true
+    colored_output: true
+    interactive_menu: true
+    preview_before_generate: true
+
+  # Messages
+  messages:
+    language: "fr"
+    show_tips: true
+    show_warnings: true
+    confirm_actions: true
+
+# Configuration des écrans de l'application
+app_screens:
+  generate_default_screens: true
+
+  # Configuration Splash Screen
+  splash:
+    duration: 3000 # millisecondes
+    show_animation: true
+    background_color: "0xFF2196F3"
+    logo_path: "assets/images/logo.png"
+
+  # Configuration Onboarding
+  onboarding:
+    enabled: true
+    steps: 3 # Configurable
+    skippable: true
+    show_indicators: true
+    pages:
+      - title: "Bienvenue"
+        description: "Découvrez notre application"
+        image: "assets/images/onboarding_1.png"
+      - title: "Fonctionnalités"
+        description: "Profitez de toutes nos fonctionnalités"
+        image: "assets/images/onboarding_2.png"
+      - title: "Commencer"
+        description: "Commencez votre expérience maintenant"
+        image: "assets/images/onboarding_3.png"
+
+  # Configuration Authentification
+  authentication:
+    methods:
+      - email_password
+      - phone_sms # optionnel
+    enable_forgot_password: true
+    enable_social_login: false
+    validation:
+      min_password_length: 8
+      require_email_verification: true
+      phone_regex: "^\\+?[1-9]\\d{1,14}$"
+
+  # Configuration Navigation
+  navigation:
+    type: "bottom_bar" # bottom_bar, drawer, or both
+    enable_logging: true
+    log_format: "{screen_name} - {timestamp} - {action}"
+    items:
+      - name: "Home"
+        icon: "Icons.home"
+        route: "/home"
+      - name: "Profile"
+        icon: "Icons.person"
+        route: "/profile"
+      - name: "Settings"
+        icon: "Icons.settings"
+        route: "/settings"
+
+# State Management
+state_management:
+  framework: "getx" # getx, riverpod, bloc, provider
+  use_bindings: true
+  use_middlewares: true
+
+# Dépendances Flutter
+flutter_dependencies:
+  get: "^4.6.6"
+  shared_preferences: "^2.2.2"
+  flutter_svg: "^2.0.9"
+  intl: "^0.18.1"
+  google_fonts: "^6.1.0"
